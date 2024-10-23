@@ -12,6 +12,13 @@ We have added the following features:
 - split the project into layers (Controller, Service, Repository and Model)
 - Separate the backend from the frontend
 - Possibility to use API and Swagger
+- Use of Testcontainers for integration tests
+- Use of p6spy for logging SQL queries
+- Use of MongoDB
+- Migration of data from relational DB to MongoDB
+
+The frontend is an Angular application that consumes the backend REST API. It allows users to register a member, list all members.
+The frontend is located in https://github.com/hamdibT/kitchensink-frontend
 
 ## Technologies Used
 
@@ -23,15 +30,16 @@ We have added the following features:
 - Maven
 - Testcontainers
 - H2 Database
-- JUnit
+- JUnit 5
 - Mockito
 - p6spy (for logging SQL queries)
+- Angular(for the frontend)
 
 ## Setup and Installation
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/hamdi-benthabet_kyriba/kitchensink.git
+   git clone https://github.com/hamdibT/kitchensink-mongodb.git
    cd kitchensink
 
 2. **Build the project:**

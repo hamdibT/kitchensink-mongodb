@@ -52,6 +52,10 @@ public class MemberService {
         return memberRepository.findById(id).orElse(null);
     }
 
-
+    @Transactional
+    public void deleteAll() {
+        log.warn("Deleting all members");
+        memberRepository.deleteAll();
+    }
 
 }

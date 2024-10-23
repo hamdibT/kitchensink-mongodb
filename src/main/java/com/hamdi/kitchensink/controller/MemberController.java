@@ -98,4 +98,10 @@ public class MemberController {
         return memberService.findAllOrderedByName();
     }
 
+    @DeleteMapping
+    @Operation(summary = "Delete All members", description = "Used only for testing purposes. It will delete all members")
+    public void deleteAll() {
+        memberService.deleteAll();
+        log.warn("All members deleted");
+    }
 }
