@@ -48,7 +48,7 @@ The frontend is located in https://github.com/hamdibT/kitchensink-frontend
 
 3. **Run the backend application:**
    ```sh
-   cd cd /path/to/your/project
+   cd /path/to/your/project
    docker-compose up
    mvn spring-boot:run
 
